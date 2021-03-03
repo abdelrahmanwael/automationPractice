@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="27" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="159357" started-at="2021-03-03T01:47:57 EET" finished-at="2021-03-03T01:50:37 EET">
+    <groups>
+    </groups>
+    <test name="Regression test" duration-ms="159357" started-at="2021-03-03T01:47:57 EET" finished-at="2021-03-03T01:50:37 EET">
+      <class name="tests.searchTest">
+        <test-method status="PASS" signature="userLoginSuccessfully()[pri:1, instance:tests.searchTest@58c1670b]" name="userLoginSuccessfully" duration-ms="5643" started-at="2021-03-03T01:50:02 EET" finished-at="2021-03-03T01:50:08 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginSuccessfully -->
+        <test-method status="PASS" signature="userSearchForProduct()[pri:0, instance:tests.searchTest@58c1670b]" name="userSearchForProduct" duration-ms="3388" started-at="2021-03-03T01:50:08 EET" depends-on-methods="tests.searchTest.userLoginSuccessfully" finished-at="2021-03-03T01:50:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearchForProduct -->
+        <test-method status="PASS" signature="userLogout()[pri:0, instance:tests.searchTest@58c1670b]" name="userLogout" duration-ms="2357" started-at="2021-03-03T01:50:11 EET" depends-on-methods="tests.searchTest.userSearchForProduct" finished-at="2021-03-03T01:50:13 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+      </class> <!-- tests.searchTest -->
+      <class name="tests.addProductToCartTest">
+        <test-method status="PASS" signature="userLoginSuccessfully()[pri:1, instance:tests.addProductToCartTest@6b57696f]" name="userLoginSuccessfully" duration-ms="5427" started-at="2021-03-03T01:50:13 EET" finished-at="2021-03-03T01:50:19 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginSuccessfully -->
+        <test-method status="PASS" signature="userSearchForProduct()[pri:0, instance:tests.addProductToCartTest@6b57696f]" name="userSearchForProduct" duration-ms="2076" started-at="2021-03-03T01:50:19 EET" depends-on-methods="tests.addProductToCartTest.userLoginSuccessfully" finished-at="2021-03-03T01:50:21 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearchForProduct -->
+        <test-method status="PASS" signature="userAddProductToCart()[pri:0, instance:tests.addProductToCartTest@6b57696f]" name="userAddProductToCart" duration-ms="2854" started-at="2021-03-03T01:50:21 EET" depends-on-methods="tests.addProductToCartTest.userSearchForProduct" finished-at="2021-03-03T01:50:24 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAddProductToCart -->
+        <test-method status="PASS" signature="userCheckOut()[pri:0, instance:tests.addProductToCartTest@6b57696f]" name="userCheckOut" duration-ms="12788" started-at="2021-03-03T01:50:24 EET" depends-on-methods="tests.addProductToCartTest.userAddProductToCart" finished-at="2021-03-03T01:50:37 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCheckOut -->
+      </class> <!-- tests.addProductToCartTest -->
+      <class name="tests.userRegistrationTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="startDriver" is-config="true" duration-ms="23587" started-at="2021-03-03T01:47:34 EET" finished-at="2021-03-03T01:47:57 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="userRegisterWithRegisteredMail()[pri:1, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithRegisteredMail" duration-ms="5582" started-at="2021-03-03T01:47:57 EET" finished-at="2021-03-03T01:48:03 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithRegisteredMail -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingFirstName()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingFirstName" duration-ms="11633" started-at="2021-03-03T01:48:03 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithRegisteredMail" finished-at="2021-03-03T01:48:15 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingFirstName -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingLastName()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingLastName" duration-ms="9373" started-at="2021-03-03T01:48:15 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingFirstName" finished-at="2021-03-03T01:48:24 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingLastName -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingPassword()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingPassword" duration-ms="10501" started-at="2021-03-03T01:48:24 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingLastName" finished-at="2021-03-03T01:48:34 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingPassword -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingAddress()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingAddress" duration-ms="11212" started-at="2021-03-03T01:48:34 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingPassword" finished-at="2021-03-03T01:48:46 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingAddress -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingCity()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingCity" duration-ms="11143" started-at="2021-03-03T01:48:46 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingAddress" finished-at="2021-03-03T01:48:57 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingCity -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingPostalCode()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingPostalCode" duration-ms="14665" started-at="2021-03-03T01:48:57 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingCity" finished-at="2021-03-03T01:49:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingPostalCode -->
+        <test-method status="PASS" signature="userRegisterWithoutInsertingPhoneNumber()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userRegisterWithoutInsertingPhoneNumber" duration-ms="16484" started-at="2021-03-03T01:49:12 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingPostalCode" finished-at="2021-03-03T01:49:28 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterWithoutInsertingPhoneNumber -->
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userCanRegisterSuccessfully" duration-ms="13974" started-at="2021-03-03T01:49:28 EET" depends-on-methods="tests.userRegistrationTest.userRegisterWithoutInsertingPhoneNumber" finished-at="2021-03-03T01:49:42 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanRegisterSuccessfully -->
+        <test-method status="PASS" signature="userLogout()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="userLogout" duration-ms="3008" started-at="2021-03-03T01:49:42 EET" depends-on-methods="tests.userRegistrationTest.userCanRegisterSuccessfully" finished-at="2021-03-03T01:49:45 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.userRegistrationTest@2c039ac6]" name="stopDriver" is-config="true" duration-ms="0" started-at="2021-03-03T01:50:37 EET" finished-at="2021-03-03T01:50:37 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.userRegistrationTest -->
+      <class name="tests.loginTest">
+        <test-method status="PASS" signature="userLoginWithInvalidMail()[pri:1, instance:tests.loginTest@587d1d39]" name="userLoginWithInvalidMail" duration-ms="4334" started-at="2021-03-03T01:49:45 EET" finished-at="2021-03-03T01:49:49 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginWithInvalidMail -->
+        <test-method status="PASS" signature="userLoginWithInvalidPassword()[pri:0, instance:tests.loginTest@587d1d39]" name="userLoginWithInvalidPassword" duration-ms="4856" started-at="2021-03-03T01:49:49 EET" depends-on-methods="tests.loginTest.userLoginWithInvalidMail" finished-at="2021-03-03T01:49:54 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginWithInvalidPassword -->
+        <test-method status="PASS" signature="userLoginSuccessfully()[pri:0, instance:tests.loginTest@587d1d39]" name="userLoginSuccessfully" duration-ms="4417" started-at="2021-03-03T01:49:54 EET" depends-on-methods="tests.loginTest.userLoginWithInvalidPassword" finished-at="2021-03-03T01:49:59 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginSuccessfully -->
+        <test-method status="PASS" signature="userLogout()[pri:0, instance:tests.loginTest@587d1d39]" name="userLogout" duration-ms="3427" started-at="2021-03-03T01:49:59 EET" depends-on-methods="tests.loginTest.userLoginSuccessfully" finished-at="2021-03-03T01:50:02 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+      </class> <!-- tests.loginTest -->
+    </test> <!-- Regression test -->
+  </suite> <!-- Default suite -->
+</testng-results>
